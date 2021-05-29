@@ -1,5 +1,8 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# firebase
+shopkori-8ecdd-firebase-adminsdk-qtbrt-339e8f1513.json
+
 # dependencies
 /node_modules
 /.pnp
