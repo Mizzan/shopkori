@@ -11,28 +11,30 @@ import Cart from './components/Cart/Cart';
 import { Provider } from 'react-redux';
 import store from './store';
 import Details from './components/Details/Details';
+import Footer from './components/Footer/Footer';
 
 
 function App() {
   return (
     <Router>
       <Provider store={store}>
-      <Nav />
-      <Switch>
+        <Nav />
+        <Switch>
 
-        <Route path="/">
-          <Home/>
-        </Route>
+          <Route path="/">
+            <Home />
+          </Route>
 
-        <Route path="/cart">
-          <Cart/>
-        </Route>
+          <Route path="/cart">
+            <Cart />
+          </Route>
 
-        <Route path="/details/:id">
-          <Details/>
-        </Route>
+          <Route path="/details/:id">
+            <Details />
+          </Route>
 
-      </Switch>
+        </Switch>
+        <Footer />
       </Provider>
     </Router>
   );
