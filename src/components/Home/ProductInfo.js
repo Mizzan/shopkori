@@ -14,11 +14,11 @@ const ProductInfo = (props) => {
                     <Card.Text className="text-muted">{description}</Card.Text>
                 </Card.Body>
                 <Card.Footer className="d-flex justify-content-around">
-                    <div>
-                        <span>{currencyFormatter.format(price, { code: 'USD' })}</span> <span className="text-muted">{discount}%</span>
+                    <div className="product__price">
+                        <span className="actualPrice">{currencyFormatter.format(price, { code: 'USD' })}</span> <span className="text-muted">{discount}%</span>
                     </div>
-                    <div>
-                        {currencyFormatter.format(discountPrice, { code: 'USD' })}
+                    <div className="product__discount__price">
+                        <span className="discount">{currencyFormatter.format(discountPrice, { code: 'USD' })}</span>
                     </div>
                 </Card.Footer>
             </Card>

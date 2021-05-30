@@ -1,10 +1,6 @@
 import './App.css';
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
+import {BrowserRouter as Router, Route} from "react-router-dom"
 import Nav from './components/Nav/Nav';
 import Home from './components/Home/Home';
 import Cart from './components/Cart/Cart';
@@ -17,22 +13,12 @@ function App() {
   return (
     <Router>
       <Provider store={store}>
-      <Nav />
-      <Switch>
-
-        <Route path="/">
-          <Home/>
-        </Route>
-
-        <Route path="/cart">
-          <Cart/>
-        </Route>
-
-        <Route path="/details/:id">
-          <Details/>
-        </Route>
-
-      </Switch>
+        <Nav />
+      
+        <Route path="/" exact component={Home} />
+        <Route path="/cart" exact component={Cart} />
+        <Route path="/details/:id" exact component={Details} />
+      
       </Provider>
     </Router>
   );
