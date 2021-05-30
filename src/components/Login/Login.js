@@ -6,7 +6,6 @@
 // import { useHistory, useLocation } from 'react-router-dom';
 
 // const Login = () => {
-//   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
 //   const history = useHistory();
 //   const location = useLocation();
 
@@ -22,9 +21,6 @@
 //       .auth()
 //       .signInWithPopup(provider)
 //       .then(function (result) {
-//         const { displayName, email } = result.user;
-//         const signedInUser = { name: displayName, email };
-//         setLoggedInUser(signedInUser);
 //         storeAuthToken();
 //         history.replace(from);
 //         // history.replace(from);
