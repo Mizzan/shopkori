@@ -1,13 +1,15 @@
-.ship-form {
-  margin: 30px 100px;
+.shipment-block {
+  width: 300px;
+  margin: 0 auto;
 }
+
 .ship-form input {
+  width: 300px;
   display: block;
-  margin-top: 30px;
+  margin: 30px auto;
   padding: 5px;
   border: 1px solid gray;
   border-radius: 5px;
-  width: 300px;
 }
 .error {
   color: red;
