@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import ScrollToTop from "react-scroll-to-top";
+import ScrollToTop from 'react-scroll-to-top';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Nav from './components/Nav/Nav';
 import Home from './components/Home/Home';
@@ -18,17 +18,10 @@ function App() {
         <Provider store={store}>
           <Nav />
 
-<<<<<<< HEAD
-        <Route path="/" exact component={Home} />
-        <Route path="/cart" exact component={Cart} />
-        <Route path="/details/:id" exact component={Details} />
-        <Route path="/shipment" component={Shipment} />
-=======
           <Route path="/" exact component={Home} />
-          <Route path="/home" exact component={Home} />
           <Route path="/cart" exact component={Cart} />
           <Route path="/details/:id" exact component={Details} />
->>>>>>> nrd141913-durjoy
+          <Route path="/shipment" component={Shipment} />
 
           <Footer />
           <ScrollToTop style={{ backgroundColor: '#12d0d9', padding: '5px' }} />
