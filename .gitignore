@@ -8,6 +8,10 @@ shopkori-8ecdd-firebase-adminsdk-qtbrt-339e8f1513.json
 /.pnp
 .pnp.js
 
+# firebase
+.firebase
+.firebaserc
+
 # testing
 /coverage
 
