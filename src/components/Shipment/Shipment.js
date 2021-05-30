@@ -11,6 +11,7 @@ const Shipment = () => {
 
   return (
     <div className="shipment-block">
+      <h4 style={{ marginTop: '20px' }}>Enter your shipment details</h4>
       <div className="row">
         <div style={{ display: 'block' }} className="col-md-6">
           <form className="ship-form" onSubmit={handleSubmit(onSubmit)}>
